@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="#f0f0f0"
+    tools:context="com.example.ilhamelmujib.fatmawati.LoginActivity">
+
+    <!-- Login progress -->
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/restaurant" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/etlogin"
+                android:hint="ID"
+                android:textAlignment="center"
+                android:inputType="numberPassword"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:letterSpacing="0.35"/>
+
+            <Button
+                android:id="@+id/button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/btnlogin"
+                android:textSize="14dp"
+                android:letterSpacing="0.3"
+                android:textColor="@color/colorAccents"
+                android:text="Login"
+                />
+
+        </LinearLayout>
+            <TextView
+                android:text="Fatmawati Copyright "
+                android:textStyle=""
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                />
+    </RelativeLayout>
+</LinearLayout>
