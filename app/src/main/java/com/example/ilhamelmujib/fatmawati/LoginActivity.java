@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                     cursor = db.rawQuery("SELECT * FROM tb_user WHERE id_user = '" + pass.getText().toString() + "'", null);
                     if(cursor.getCount() > 0){
                         cursor.moveToFirst();
-                        Toast.makeText(getApplicationContext(), "Selamat datang " + cursor.getString(1).toString(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "Selamat Datang " + cursor.getString(1).toString(), Toast.LENGTH_LONG).show();
                         Intent i = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(i);
                         finish();
